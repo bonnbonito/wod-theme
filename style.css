@@ -1,0 +1,467 @@
+/*
+Theme Name: W & OD Theme
+Theme URI: 
+Author: Bonn Joel Elimanco
+Author URI: http://twitter.com:/bonnjoel
+Description: Theme for W & OD Website Using Twitter Bootstrap 3
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: wod
+
+*/
+
+* {
+	-webkit-transition: all 0.6s ease;
+	-moz-transition:    all 0.6s ease;
+	-o-transition:      all 0.6s ease;
+}
+
+body {
+	padding-top: 108px;	
+	background: #f6f5eb;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+h1, h2, h3, h4, h5, .btn-readmore {
+	font-family: 'Arvo', serif;
+}
+
+.btn-readmore {
+	text-transform: uppercase;
+	font-weight: bold;
+	background-color: #a4bb3b;
+	color: #fff;
+}
+
+.btn-readmore:hover {	
+	background-color: #80502b;
+	color: #fff;
+}
+
+/*HEADER*/
+
+.head-container {
+	max-width: 980px;
+}
+
+.navbar {
+	min-height: 45px;
+}
+
+.admin-bar .navbar-fixed-top {
+	margin-top: 30px;
+}
+
+.navbar-inverse {
+	background-color: transparent;
+	border-bottom: 0;
+}
+
+.navbar-nav>li>a {	
+	font-size: 13px;
+	text-transform: uppercase;
+	font-family: 'Arvo', serif;
+	font-weight: bold;
+	padding-top: 12px;
+	padding-bottom: 13px;
+	padding-left: 18px;
+	
+}
+
+.navbar-inverse .navbar-nav>li>a {
+	color: #fff;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+	color: #6f4b35;
+}
+
+.nav.navbar-nav {
+	background: url(images/nav.png) right no-repeat;
+	padding-left: 250px;
+}
+
+.front-widgets-container {
+	margin-top: -70px;
+	background: #f6f5eb;
+}
+
+.front-widgets h3 {
+	color: #80502b;
+	border-bottom: 1px solid #a4bb3b;
+	padding-bottom: 15px;
+}
+
+.front-widgets img:hover {
+	
+}
+
+.navbar-logo {
+	position: absolute;
+	
+}
+
+@media (min-width:768px) {
+	.sub-menu {
+		display: none;
+		position: absolute;
+		background: #222;
+		padding: 10px 15px;
+		width: 200px;		
+	}
+
+	li:hover .sub-menu {
+		display: block;
+	}
+
+}
+
+.sub-menu li {
+	margin-bottom: 10px;
+	list-style: none;
+}
+
+.sub-menu li:last-child {
+	margin-bottom: 0;
+}
+
+.sub-menu a  {
+	color: #999;
+	text-decoration: none;
+}
+
+.sub-menu a:hover  {
+	color: #fff;	
+}	
+
+.current-menu-item.current-menu-item.current-menu-item > a, .current-menu-parent > a {
+	color: #6f4b35;
+}
+.current-menu-parent li a {
+	background: inherit;
+}
+.current-menu-parent .current-menu-item a {
+	color: #fff;
+	font-weight: bold;
+}
+
+.sidebar { 
+	margin-top: 40px;
+	color: #444;
+}
+
+.sidebar h3 {
+	color: #888;
+}
+
+.widget {
+	margin: 10px 0 30px;
+}
+
+article.post {
+	margin: 20px 0 40px;
+}
+
+.featured-image img,
+.portfolio-piece img,
+.portfolio-image img {
+	max-width: 100%;
+}
+
+.prev-next {
+	font-size: 24px;
+	margin-top: 30px;
+	text-align: right;
+}
+
+@media (max-width:540px) {
+	.portfolio-piece h4 {
+		font-size: .8em;
+	}
+	.prev-next {
+		margin-top: 15px;
+		font-size: 18px;
+	}
+}
+
+.navbar-toggle {
+
+}
+
+.front-widgets {
+	text-align: center;
+}
+
+/*CAROUSEL*/
+
+.carousel {
+	margin-top: -108px;
+}
+
+.carousel img {
+	width: 100%;	
+}
+
+.activities, .map-your-hike, .about-the-trail {
+	width: 285px;
+	margin: auto;
+}
+
+.activities .textwidget, .map-your-hike .textwidget, .about-the-trail .textwidget {
+	margin: auto 14px;
+}
+
+.front-widgets div {
+	margin-bottom: 40px;
+}
+
+figure { 
+	display: block; 
+	position: relative; 
+	overflow: hidden; 
+	display: inline-block; 
+}
+
+figure img {	
+	position: relative;	
+	width: 100%;
+}
+
+.history {
+	text-align: right;
+}
+
+.contact-us {
+	text-align: left;
+}
+
+figcaption { 
+	position: absolute; 
+	background: rgba(0,0,0,0.75); 
+	color: white; 
+	padding: 10px 20px; 
+	font-family: 'Arvo', serif;
+	font-weight: 18px;
+}
+
+.history figcaption { 
+	position: absolute; 
+	background: rgba(94, 61, 40, 0.9); 
+	color: white; 
+	padding: 10px 20px; 
+	opacity: 1;
+	bottom: 5px;
+	left: 5px;  
+
+}
+
+.history figcaption:before {
+	position:absolute; right:-14px; top:0px; content:'';
+	border-top: 40px solid rgba(94, 61, 40, 0.9);
+	border-right: 14px solid transparent;
+}
+
+
+.contact-us figcaption { 
+	position: absolute; 
+	background: rgba(94, 61, 40, 0.9); 
+	color: white; 
+	padding: 10px 20px; 
+	opacity: 1;
+	bottom: 5px;
+	right: 5px;  
+
+}
+
+.contact-us figcaption:before {
+	position:absolute; left:-13px; top:0px; content:'';
+	border-top: 40px solid rgba(94, 61, 40, 0.9);
+	border-left: 14px solid transparent;
+}
+
+
+
+figure:hover figcaption { 
+	color: #a4bb3b;  
+}
+
+
+figure img:hover {
+	opacity: .7;
+}
+
+.second-row {
+	margin-bottom: 40px;
+}
+
+
+
+/*FOOTER*/
+
+footer {
+	background: #80502b;	
+	border-top: 3px #a4bb3b solid;
+	color: #e7e2c3;
+	padding-top: 35px;
+}
+
+footer ul {
+	padding: 0;
+	list-style: none;
+}
+
+footer h3 {
+	font-size: 18px;
+	color: #a4bb3b;
+}
+
+footer a {
+	color: #e7e2c3;	
+}
+
+footer a:hover {
+	color: #f8f6e5;	
+	text-decoration: none;
+}
+
+footer li {
+	border-bottom: 1px dotted #e7e2c3;
+	margin-top: 5px;
+}
+
+footer li:hover {
+	border-bottom: 1px dotted rgba(0,0,0,0);
+}
+
+.copyright {
+	color: #fff;
+	font-family: 'Arvo', serif;
+	text-align: center;
+	font-size: 14px;
+	background: #a4bb3b;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-bottom: 0;
+}
+
+textarea.form-control.form-control {
+	height: 68px;
+}
+
+.btn-green {
+	background: #a4bb3b;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.headroom--pinned {
+	display: block;
+}
+.headroom--unpinned {
+	display: none;
+}
+
+
+.navbar-collapse {
+	border-top: 0;
+	box-shadow: 0 0 0;
+}
+/*
+ * Off Canvas
+ * --------------------------------------------------
+ */
+ @media screen and (max-width: 767px) {
+ 	.row-offcanvas {
+ 		position: relative;
+ 		-webkit-transition: all .25s ease-out;
+ 		-moz-transition: all .25s ease-out;
+ 		transition: all .25s ease-out;
+ 	}
+
+ 	.row-offcanvas-right {
+ 		right: 0;
+ 	}
+
+ 	.row-offcanvas-left {
+ 		left: 0;
+ 	}
+
+ 	.row-offcanvas-right
+ 	.sidebar-offcanvas {
+ 		right: -50%; /* 6 columns */
+ 	}
+
+ 	.row-offcanvas-left
+ 	.sidebar-offcanvas {
+ 		left: -50%; /* 6 columns */
+ 	}
+
+ 	.row-offcanvas-right.active {
+ 		right: 50%; /* 6 columns */
+ 	}
+
+ 	.row-offcanvas-left.active {
+ 		left: 50%; /* 6 columns */
+ 	}
+
+ 	.sidebar-offcanvas {
+ 		position: absolute;
+ 		top: 0;
+ 		width: 50%; /* 6 columns */
+ 	}
+ }
+
+
+ @media (max-width: 1318px) {
+ 	.navbar-nav>li>a {
+ 		padding-left: 15px;
+ 	}
+ }
+
+ @media (max-width: 1090px) {
+ 	.nav.navbar-nav {
+ 		background: #8ba819;
+ 		padding-left: 200px;
+ 		margin-left: 100px;
+ 	}
+ 	.activities, .map-your-hike, .about-the-trail {
+		width: auto;
+ 	}
+
+ 	.history, .contact-us {
+ 		text-align: center;
+ 	}
+ }
+
+ @media (max-width: 929px) {
+ 	.head-container {
+ 		background: #613d25;
+ 		height: 108px;
+ 	}
+
+ 	.front-widgets-container {
+ 		padding-top: 20px;
+ 		margin-top: 0;
+ 	}
+ }
+
+ @media (max-width: 845px) {
+ 	.nav.navbar-nav {
+ 		background: transparent; 		
+ 		float: right; 	 			
+ 	}
+ 	body {
+ 		padding-top: 216px;
+ 		background: #613d25;
+ 	}
+
+ 	.navbar-inverse .navbar-nav>li>a {
+ 		background: #613d25;
+ 	}
+
+ 	.navbar-inverse .navbar-nav>li>a:hover {
+ 		background: #8ca614;
+ 	} 	
+ 	
+ }
